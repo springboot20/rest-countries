@@ -1,4 +1,3 @@
-import React from 'react';
 import useData from '../../context/DataContext';
 
 type RegionTypes = Array<{ name: string; code: string }>;
