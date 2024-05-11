@@ -4,7 +4,7 @@ import App from './App.tsx';
 import './index.css';
 import 'react-toastify/dist/ReactToastify.css';
 import { ThemeProvider } from '@material-tailwind/react';
-import  {BrowserRouter} from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -15,7 +15,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     </BrowserRouter>
   </React.StrictMode>
 );
-
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
