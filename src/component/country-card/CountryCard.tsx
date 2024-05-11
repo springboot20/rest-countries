@@ -1,4 +1,3 @@
-import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Country as SingleCountry } from '../../types';
 import Button from '../icon/Button';

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { DataProvider } from './context/DataContext';
 import Countries from './pages/Countries';

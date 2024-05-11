@@ -1,4 +1,3 @@
-import React from 'react';
 type ButtonProps = React.ComponentProps<'button'>;
 
 const Button = ({ children, ...rest }:ButtonProps) => {
