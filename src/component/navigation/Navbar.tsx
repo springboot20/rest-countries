@@ -1,5 +1,3 @@
-import Icon from '../icon/Icon';
-import { faMoon, faSun } from '@fortawesome/fontawesome-free-regular';
 import useTheme from '../../context/ThemeContext';
 import ModeToggle from '../inputs/ModeToggle';
 
@@ -14,12 +12,7 @@ const Navbar = () => {
             Where in the world?
           </h1>
         </header>
-        <ModeToggle
-          icon={<Icon icon={activeMode ? faMoon : faSun} className='h-7 dark:text-white' />}
-          setTheme={setTheme}
-          activate={activateTheme}
-          active={activeMode}
-        />
+        <ModeToggle setTheme={setTheme} activate={activateTheme} active={activeMode} />
       </div>
     </nav>
   );
