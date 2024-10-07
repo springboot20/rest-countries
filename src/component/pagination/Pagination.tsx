@@ -45,7 +45,7 @@ const Pagination = ({ itemsPerPage, totalItems, currentPage, onPageChange }: Pag
         ))}
         <Button
           onClick={() => handlePageChange(currentPage + 1)}
-          className={"flex items-center gap-2 border-r-[1px] border-gray-900/75 p-2 cursor-pointer"}
+          className={"flex items-center gap-2 border-l-[1px] border-gray-900/75 p-2 cursor-pointer"}
         >
           <span className="text-sm font-medium block dark:text-white">Next</span>
           <Icon

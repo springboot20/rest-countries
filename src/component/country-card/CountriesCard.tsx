@@ -21,20 +21,20 @@ const CountriesCard = ({ country }: CountriesProps) => {
       <div className='p-4'>
         <NavLink
           to={`/${country.name}`}
-          className='card-title dark:text-white text-xl font-medium hover:underline'>
+          className='card-title dark:text-white text-xl font-medium underline'>
           {country.name}
         </NavLink>
-        <p className='card-population font-medium dark:text-white'>
+        <p className='card-population text-base font-medium dark:text-white'>
           Population:{' '}
-          <span className='text-dark-blue-dark-LMT dark:text-white font-thin'>
+          <span className='text-dark-blue-dark-LMT dark:text-white text-sm font-normal'>
             {formatCountryPopulation(country.population)}
           </span>
         </p>
-        <p className='font-medium dark:text-white'>
-          Region: <span className='font-thin dark:to-dark-gray-LMT'>{country.region}</span>
+        <p className='text-base font-medium dark:text-white'>
+          Region: <span className='text-sm font-normal dark:to-dark-gray-LMT'>{country.region}</span>
         </p>
-        <p className='font-medium dark:text-white'>
-          Capital: <span className='font-thin dark:to-dark-gray-LMT'>{country.capital}</span>
+        <p className='text-base font-medium dark:text-white'>
+          Capital: <span className='text-sm font-normal dark:to-dark-gray-LMT'>{country.capital}</span>
         </p>
       </div>
     </motion.div>

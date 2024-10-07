@@ -5,10 +5,9 @@
 @tailwind utilities;
 
 @layer base {
-
-*{
-  @apply font-roboto antialiased;
-}
+  * {
+    @apply font-roboto antialiased;
+  }
 
   body {
     @apply bg-very-light-gray-LMB dark:bg-very-dark-blue-DMB;
@@ -18,7 +17,7 @@
 @layer components {
 
   .search-group:nth-child(1) {
-    @apply flex items-center w-[35rem] bg-white shadow-dark-blue-dark-DME text-[#212529] appearance-none border-[1px] border-[#ced4da] rounded-lg bg-clip-padding  md:overflow-hidden text-lg dark:bg-dark-blue-dark-DME;
+    @apply flex items-center sm:w-[35rem] bg-white shadow-dark-blue-dark-DME text-[#212529] appearance-none border-[1px] border-[#ced4da] rounded-lg bg-clip-padding md:overflow-hidden text-lg dark:bg-dark-blue-dark-DME;
   }
 
   .search-group:nth-child(1) input {
@@ -28,8 +27,9 @@
   .search-group:nth-child(1) .search-icon {
     @apply h-5 p-2.5 text-dark-gray-LMT dark:text-white;
   }
+
   .search-group:nth-child(2) select {
-    @apply w-[25rem] h-full px-6 py-3 bg-white shadow-dark-blue-dark-DME text-[#212529] appearance-none border-[1px] border-[#ced4da] rounded-lg bg-clip-padding px-6 text-lg dark:bg-dark-blue-dark-DME dark:text-white;
+    @apply sm:w-[25rem] h-full px-6 py-3 bg-white shadow-dark-blue-dark-DME text-[#212529] appearance-none border-[1px] border-[#ced4da] rounded-lg bg-clip-padding px-6 text-lg dark:bg-dark-blue-dark-DME dark:text-white;
   }
 
   .back-btn,

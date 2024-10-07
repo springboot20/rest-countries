@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 
 const Countries = () => {
   const { displayCountries, searchResultMessage } = useData();
-  const itemsPerPage = 25;
+  const itemsPerPage = 30;
   const [currentPage, setCurrentPage] = useState(1);
 
   const startIndex = (currentPage - 1) * itemsPerPage;
@@ -26,13 +26,13 @@ const Countries = () => {
       <SearchNavigation />
       <section
         id='countries'
-        className='relative top-[20rem] md:top-[13rem] md:h-[calc(100%-13rem)]'>
+        className='relative top-[18rem] sm:top-[13rem] md:h-[calc(100%-13rem)]'>
         <motion.div
           layout
           initial='hidden'
           animate='visible'
           variants={gridVariants}
-          className='grid grid-cols-1 sm:grid-cols-2 gap-4 px-8 lg:grid-cols-3 xl:grid-cols-4 mx-auto max-w-7xl pt-5 pb-[9rem] xl:px-0'>
+          className='grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 lg:grid-cols-3 xl:grid-cols-4 mx-auto max-w-7xl pt-5 xl:px-0'>
           {searchResultMessage ? (
             <p className='font-semibold dark:text-white text-dark-blue-dark-LMT text-2xl'>
               {searchResultMessage}
