@@ -31,70 +31,70 @@ const CountryCard = ({ countries }: CountriesProps) => {
 
   return (
     <React.Fragment>
-      <div className='relative overflow-hidden rounded-lg col-span-2'>
-        <img src={country?.flag} alt='' className='object-cover bg-no-repeat ' />
+      <div className='relative overflow-hidden rounded-lg col-span-2 border'>
+        <img src={country?.flag} alt='' className='object-cover bg-no-repeat h-full' />
       </div>
       <div className='col-span-2'>
-        <h1 className='text-4xl font-bold mb-16 text-dark-blue-dark-DME dark:text-white'>
+        <h1 className='text-lg sm:text-3xl font-medium text-dark-blue-dark-DME dark:text-white'>
           {country?.name}
         </h1>
-        <div className='grid grid-cols-2'>
-          <div className='space-y-5'>
-            <p className='text-2xl font-semibold dark:text-white'>
+        <div className='grid grid-cols-2 mt-4'>
+          <div className='space-y-1'>
+            <p className='text-lg font-medium dark:text-white'>
               Native Name:{' '}
-              <span className='text-dark-blue-dark-LMT dark:text-white font-normal'>
+              <span className='text-base text-dark-blue-dark-LMT dark:text-white font-normal'>
                 {country?.nativeName}
               </span>
             </p>
-            <p className='text-2xl font-semibold dark:text-white'>
+            <p className='text-lg font-medium dark:text-white'>
               Population:{' '}
-              <span className='text-dark-blue-dark-LMT dark:text-white font-normal'>
+              <span className='text-base text-dark-blue-dark-LMT dark:text-white font-normal'>
                 {formatPopulation(country?.population)}
               </span>
             </p>
-            <p className='text-2xl font-semibold dark:text-white'>
+            <p className='text-lg font-medium dark:text-white'>
               Region:{' '}
-              <span className='text-dark-blue-dark-LMT dark:text-white font-normal'>
+              <span className='text-base text-dark-blue-dark-LMT dark:text-white font-normal'>
                 {country?.region}
               </span>
             </p>
-            <p className='text-2xl font-semibold dark:text-white'>
+            <p className='text-lg font-medium dark:text-white'>
               Sub Region:{' '}
-              <span className='text-dark-blue-dark-LMT dark:text-white font-normal'>
+              <span className='text-base text-dark-blue-dark-LMT dark:text-white font-normal'>
                 {country?.subregion}
               </span>
             </p>
-            <p className='text-2xl font-semibold dark:text-white'>
+            <p className='text-lg font-medium dark:text-white'>
               Capital:{' '}
-              <span className='text-dark-blue-dark-LMT dark:text-white font-normal'>
+              <span className='text-base text-dark-blue-dark-LMT dark:text-white font-normal'>
                 {country?.capital}
               </span>
             </p>
           </div>
-          <div className='space-y-5'>
-            <p className='text-2xl font-semibold dark:text-white'>
+          <div className='space-y-1'>
+            <p className='text-lg font-medium dark:text-white'>
               Top Level Domain:{' '}
-              <span className='text-dark-blue-dark-LMT dark:text-white font-normal'>
+              <span className='text-base text-dark-blue-dark-LMT dark:text-white font-normal'>
                 {country?.region}
               </span>
             </p>
-            <p className='text-2xl font-semibold dark:text-white'>
+            <p className='text-lg font-medium dark:text-white'>
               Currencies:{' '}
-              <span className='text-dark-blue-dark-LMT dark:text-white font-normal'>
+              <span className='text-base text-dark-blue-dark-LMT dark:text-white font-normal'>
                 {country?.subregion}
               </span>
             </p>
-            <p className='text-2xl font-semibold dark:text-white'>
+            <p className='text-lg font-medium dark:text-white'>
               Languages:{' '}
-              <span className='text-dark-blue-dark-LMT dark:text-white font-normal'>
+              <span className='text-base text-dark-blue-dark-LMT dark:text-white font-normal'>
                 {joinedLanguages}
               </span>
             </p>
           </div>
         </div>
 
-        <div className='flex items-center flex-shrink-0 gap-6 mt-16 w-full'>
-          <p className='text-2xl font-semibold dark:text-white block flex-shrink-0'>
+        <div className='flex items-center flex-shrink-0 gap-6 mt-10 w-full'>
+          <p className='text-base sm:text-lg font-semibold dark:text-white block flex-shrink-0'>
             Border Countries:{' '}
           </p>
           <div className='overflow-auto'>
@@ -103,7 +103,7 @@ const CountryCard = ({ countries }: CountriesProps) => {
                 <Button
                   onClick={() => navigate(`/${borderName}`)}
                   key={index}
-                  className='border-btn inline-block text-lg font-semibold px-4 py-2 rounded-md bg-white dark:text-white dark:bg-dark-blue-dark-DME !text-ellipsis mt-3 mx-2'>
+                  className='border-btn inline-block text-base font-normal px-4 py-2 rounded-md bg-white dark:text-white dark:bg-dark-blue-dark-DME !text-ellipsis mt-3 mx-2'>
                   {borderName}
                 </Button>
               ))}
