@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 
 const Countries = () => {
   const { displayCountries, searchResultMessage } = useData();
-  const itemsPerPage = 20;
+  const itemsPerPage = 25;
   const [currentPage, setCurrentPage] = useState(1);
 
   const startIndex = (currentPage - 1) * itemsPerPage;
@@ -32,7 +32,7 @@ const Countries = () => {
           initial='hidden'
           animate='visible'
           variants={gridVariants}
-          className='grid grid-cols-1 sm:grid-cols-2 gap-8 px-8 lg:grid-cols-3 2sxl:grid-cols-4 mx-auto max-w-[120rem] pt-5 pb-[9rem] lg:px-8'>
+          className='grid grid-cols-1 sm:grid-cols-2 gap-4 px-8 lg:grid-cols-3 xl:grid-cols-4 mx-auto max-w-7xl pt-5 pb-[9rem] xl:px-0'>
           {searchResultMessage ? (
             <p className='font-semibold dark:text-white text-dark-blue-dark-LMT text-2xl'>
               {searchResultMessage}

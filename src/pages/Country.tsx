@@ -11,7 +11,7 @@ const Country = () => {
     <>
       <Navbar />
       <section className='relative top-[8rem] h-[calc(100%-8rem)] px-11'>
-        <div className='max-w-[120rem] mx-auto'>
+        <div className='max-w-7xl mx-auto'>
           <LinkButton
             className='back-btn flex items-center outline-none rounded-md max-w-fit px-8 py-3 gap-3 dark:bg-very-dark-blue-DMB dark:shadow-gray-900 my-16'
             to='/'

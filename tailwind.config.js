@@ -21,6 +21,9 @@ export default {
         emerald: colors.emerald,
         ...defaultTheme.colors,
       },
+      fontFamily:{
+        roboto:['"Roboto", sans-serif']
+      }
     },
   },
   plugins: [],
