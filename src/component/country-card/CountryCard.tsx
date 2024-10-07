@@ -32,7 +32,7 @@ const CountryCard = ({ countries }: CountriesProps) => {
   return (
     <React.Fragment>
       <div className='relative overflow-hidden rounded-lg col-span-2 border'>
-        <img src={country?.flag} alt='' className='object-cover bg-no-repeat h-full' />
+        <img src={country?.flag} alt='' className='object-cover bg-no-repeat h-full w-full' />
       </div>
       <div className='col-span-2'>
         <h1 className='text-lg sm:text-3xl font-medium text-dark-blue-dark-DME dark:text-white'>

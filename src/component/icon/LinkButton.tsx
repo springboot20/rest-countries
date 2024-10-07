@@ -1,18 +1,18 @@
-import { Link, LinkProps } from 'react-router-dom';
+import React from "react";
 
 type LinkButtonProps = {
   name: string;
   icon: React.ReactNode;
-} & LinkProps;
+} & React.ComponentProps<"button">;
 
 const LinkButton = ({ icon, name, ...rest }: LinkButtonProps) => {
   return (
-    <Link {...rest}>
+    <button {...rest}>
       {icon}
-      <span className='dark:text-white text-dark-blue-dark-LMT block text-base font-medium'>
+      <span className="dark:text-white text-dark-blue-dark-LMT block text-base font-medium">
         {name}
       </span>
-    </Link>
+    </button>
   );
 };
 
